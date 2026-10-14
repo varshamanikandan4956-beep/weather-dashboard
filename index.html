@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyCast - Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h2>☁ SkyCast</h2>
+      <p>Your Weather Companion</p>
+    </header>
+
+    <section class="search">
+      <input id="cityInput" type="text"
+        placeholder="Enter city name, e.g. Kochi">
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <p id="status">Search for a city to see its weather.</p>
+
+    <section id="weather" hidden>
+      <h1 id="cityName"></h1>
+      <div id="weatherIcon">🌤️</div>
+      <h2><span id="temperature">--</span>°C</h2>
+      <p id="description"></p>
+      <p>Feels like: <span id="feels">--</span>°C</p>
+      <p>Humidity: <span id="humidity">--</span>%</p>
+      <p>Wind: <span id="wind">--</span> m/s</p>
+
+      <h2>5-Day Forecast</h2>
+      <div id="forecast" class="forecast"></div>
+    </section>
+  </main>
+</body>
+</html>
